@@ -1,0 +1,86 @@
+// _home.scss
+
+.home {
+    overflow: hidden;
+
+    video {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -1;
+        transform: translateX(-50%) translateY(-50%);
+        // background: url(polina.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    .bg {
+        @include absolute-center;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        // background: url('../media/bw_waves-3.gif') center center no-repeat;
+        // background-size: cover;
+        background-color: rebeccapurple;
+        opacity: 0.15;
+        animation: colorFade 20s infinite;
+        @keyframes colorFade {
+            0% {
+                background-color: black;
+            }
+            25% {
+                background-color: red;
+            }
+            50% {
+                background-color: rebeccapurple;
+            }
+            75% {
+                background-color: green;
+            }
+            100% {
+                background-color: black;
+            }
+        }
+    }
+
+    .logo {
+        @include absolute-center;
+        z-index: 1;
+        height: auto;
+        // word mark
+            // width: 60vw;
+            // max-width: 200rem;
+            // min-width: 30rem;
+        // logo
+            width: 30rem;
+            min-width: 20rem;
+
+            @media only screen and (min-width: 1441px) {
+                width: 80vw;
+                max-width: 50rem;
+            }
+
+        svg {
+
+            // word mark
+            // path {
+            //     fill: $white;
+            //     // opacity: 0.5;
+            // }
+
+            // circle {
+            //     fill: url(#pattern);
+            // }
+
+            // logo
+            path {
+                // opacity: 0.5;
+                fill: url(#pattern);
+            }
+        }
+    }
+}
+

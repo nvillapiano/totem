@@ -1,6 +1,7 @@
 html, body {
   @include font-smoothing;
   @include transition( opacity 0.3s ease-out );
+  font-size: 62.5%;
 }
 
 *, *:before, *:after {

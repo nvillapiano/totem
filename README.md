@@ -1,5 +1,5 @@
-# project-name
-Totem - "Splash" page
+# T 0 T E M
+"Splash" page (wink)
 
 # Dependencies
 ## PHP
