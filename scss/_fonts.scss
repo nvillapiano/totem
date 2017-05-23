@@ -4,3 +4,21 @@
 //   font-style: normal;
 //   font-weight: 400;
 // }
+
+@mixin cartograph {
+  font-family: "CartographMonoCF-Regular", "Courier", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+    font-family: 'CartographMonoCF-Regular';
+    src: url('../fonts/cartograph-mono-cf.eot');
+    src: url('../fonts/cartograph-mono-cf.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/cartograph-mono-cf.woff2') format('woff2'),
+         url('../fonts/cartograph-mono-cf.woff') format('woff'),
+         url('../fonts/cartograph-mono-cf.ttf') format('truetype'),
+         url('../fonts/cartograph-mono-cf.svg#youworkforthem') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
